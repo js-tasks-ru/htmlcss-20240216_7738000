@@ -1,0 +1,47 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    width: 50%;
+    text-align: center;
+    color: white;
+}
+
+header {
+    padding-top: 5px;
+    background-color: red;
+}
+
+a {
+    padding: 0 20px;
+}
+
+nav {
+    padding: 10px;
+    background-color: chocolate;
+}
+
+main {
+    padding: 10px;
+    background-color: rgb(2, 151, 2);
+}
+
+article {
+    margin-bottom: 5px;
+    padding: 5px;
+    text-align: left;
+    background-color: blue;
+
+}
+
+h2 {
+    padding-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer {
+    background-color: blueviolet;
+    padding: 15px;
+    font-size: 2em;
+}
