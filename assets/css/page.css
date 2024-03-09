@@ -1,11 +1,5 @@
 .page__body {
-
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%; */
     font-family: Inter;
-    /* background-color: yellow; */
 }
 
 
@@ -14,11 +8,9 @@
     margin-left: auto;
     margin-right: auto;
     height: 237px;
-    /* padding-left: 160px; */
     padding-top: 96px;
     font-size: 50px;
     font-weight: 500;
-    /* background-color: yellow; */
 }
 
 .page__header h1 {
@@ -36,7 +28,6 @@
     background-color: var(--grey-1);
     border-top: 1px solid var(--grey-2);
     border-bottom: 1px solid var(--grey-2);
-    /* height: 1036px; */
 }
 
 .card__box {
@@ -46,7 +37,6 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 1110px;
-    /* background-color: red; */
 }
 
 .card__name {
@@ -58,14 +48,13 @@
     justify-self: stretch;
     flex-grow: 1;
     padding: auto 0;
-    background-color: brown;
+    /* background-color: brown; */
 }
 
 .card {
     display: flex;
     flex-direction: column-reverse;
     flex-basis: 350px;
-    /* width: 350px; */
     height: 367px;
     border-radius: 12px;
     background-color: var(--white);
@@ -79,7 +68,6 @@
 }
 
 .footer h2 {
-    /* margin-top: 72px; */
     font-size: 38px;
     font-weight: 500;
     text-align: center;
