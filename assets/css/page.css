@@ -56,7 +56,9 @@
 
 .card__content {
     justify-self: stretch;
+    flex-grow: 1;
     padding: auto 0;
+    background-color: brown;
 }
 
 .card {
