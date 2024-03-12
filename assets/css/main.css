@@ -1,6 +1,10 @@
 @import '../fonts/fonts.css';
 
 :root {
+    --button-primary-n: #4263eb;
+    --button-primary-h: #2342c0;
+    --button-secondary-n: #7048E8;
+    --button-secondary-h: #5028C6;
     --white: #ffffff;
     --black: #212429;
     --pink: #F784AD;
