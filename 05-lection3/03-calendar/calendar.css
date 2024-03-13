@@ -1,0 +1,76 @@
+:root {
+    --day-start: rgba(66, 99, 235, 1);
+    --day-range: rgba(160, 177, 245, 0.2);
+}
+
+@font-face {
+    font-family: "SourceSansPro";
+    src: url("/assets/fonts/source-sans-pro/SourceSansPro-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf") format("opentype");
+}
+
+
+.calendar__box {
+    width: 304px;
+    height: 324px;
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    padding: 28px 32px;
+}
+
+.calendar__title {
+    font-family: "Inter";
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--grey-5);
+    padding-bottom: 8px;
+}
+
+.calendar__block {
+    display: block;
+    position: relative;
+    padding-bottom: 100%;
+
+}
+
+.calendar__block_greel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+
+}
+
+.calendar_day {
+    font-family: SourceSansPro;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.calendar_day_name {
+    font-size: 14px;
+    color: var(--grey-3);
+}
+
+.calendar_day_start {
+    background-color: var(--day-start);
+    color: var(--white);
+}
+
+.calendar_day_range {
+    background-color: var(--day-range);
+}
