@@ -1,0 +1,21 @@
+.page {
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.header {
+    height: 150px;
+    background-color: blueviolet;
+}
+
+.main {
+    width: 1100px;
+    background-color: yellow;
+    height: 100%;
+}
+
+.footer {
+    height: 200px;
+    background-color: brown;
+}
