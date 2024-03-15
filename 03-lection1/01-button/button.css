@@ -1,20 +1,18 @@
 /* Стилизация кнопки */
 .button {
-    width: 189px;
-    /* padding: 14px; */
+    padding-right: 14px;
+    padding-left: 14px;
     height: 48px;
     text-align: center;
     font-family: Roboto;
     font-size: 16px;
     border: none;
     border-radius: 8px;
-    /* box-shadow: 3px 3px 3px gray; */
     transition: 0.2s;
 
 }
 
 .button:active {
-    /* box-shadow: 0px 0px 3px gray; */
     transition: 0.2s;
 }
 
@@ -50,8 +48,7 @@
     color: var(--grey-4);
 }
 
-.button_disabled {
+.button:disabled {
     opacity: 50%;
     pointer-events: none;
-    /* box-shadow: none; */
 }
