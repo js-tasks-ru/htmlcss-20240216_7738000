@@ -1,7 +1,11 @@
 /* Стилизация аккордеона */
+<<<<<<< HEAD
 .accordion {
     width: 730px;
 }
+=======
+.accordion {}
+>>>>>>> 9a31a89 (Скорректированы паддинги и структура)
 
 .accordion__item {
     font-family: Inter;
@@ -9,7 +13,11 @@
     font-weight: 400;
     border: 1px solid var(--grey-3);
     border-radius: 8px;
+<<<<<<< HEAD
     padding: 24px 32px 0 32px;
+=======
+    padding: 24px 32px;
+>>>>>>> 9a31a89 (Скорректированы паддинги и структура)
     cursor: pointer;
     margin-bottom: 8px;
 }
@@ -20,7 +28,10 @@
 
 .accordion__title {
     color: var(--black);
+<<<<<<< HEAD
     padding-bottom: 24px;
+=======
+>>>>>>> 9a31a89 (Скорректированы паддинги и структура)
 }
 
 .accordion__title [open] {
@@ -28,7 +39,11 @@
 }
 
 .accordion__content {
+<<<<<<< HEAD
     padding-bottom: 24px;
+=======
+    padding-top: 16px;
+>>>>>>> 9a31a89 (Скорректированы паддинги и структура)
     line-height: 24px;
     color: var(--grey-4);
 }
