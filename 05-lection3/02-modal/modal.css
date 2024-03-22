@@ -1,0 +1,73 @@
+@font-face {
+    font-family: Inter;
+    src: url("/assets/fonts/Inter-VariableFont_slnt\,wght.ttf") format("opentype");
+}
+
+.modal {
+    /* position: relative; */
+}
+
+.modal__button {
+    margin: 0;
+    width: 189px;
+    padding: 15px 0 14px;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 300;
+    color: var(--white);
+    background-color: #4263EB;
+    border-radius: 10px;
+}
+
+.modal__transparent {
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0;
+    bottom: 0;
+    background-color: #FFFFFF7F;
+}
+
+.modal__window {
+    position: fixed;
+    width: 508px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* padding: 40px 40px 47px; */
+    background-color: #C4C4C47F;
+}
+
+.modal__content {
+    margin: 40px 40px 47px;
+    padding: 12px;
+    border-radius: 8px;
+    height: 100%;
+    background-color: var(--white);
+}
+
+.modal__close {
+    text-align: right;
+    padding-bottom: 2px;
+}
+
+.modal__title {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #334D6E;
+    padding-left: 28px;
+    padding-bottom: 14px;
+}
+
+.modal__text {
+    color: var(--grey-4);
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 28px 28px;
+}
