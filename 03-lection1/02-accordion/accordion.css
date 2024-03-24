@@ -1,31 +1,39 @@
 /* Стилизация аккордеона */
-* {
-    font-family: Inter;
-}
-
 .accordion {
     width: 730px;
-    border: 1px solid var(--grey-3);
-    border-radius: 10px;
-    padding: 24px 32px;
+}
+
+.accordion__item {
+    font-family: Inter;
     font-size: 16px;
     font-weight: 400;
-    color: var(--grey-4);
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    padding: 24px 32px;
+    cursor: pointer;
     margin-bottom: 8px;
 }
 
-.accordion summary {
-    color: black;
-
+.accordion__item:last-child {
+    margin-bottom: 0;
 }
 
-.accordion summary::-webkit-details-marker {
+.accordion__title {
+    color: var(--black);
+}
+
+.accordion__title [open] {
+    margin-bottom: 24px;
+}
+
+.accordion__content {
+    padding-top: 16px;
+    line-height: 24px;
+    color: var(--grey-4);
+}
+
+
+.accordion__title::-webkit-details-marker {
     /* нестандартный псевдоэлемент Google Chrome */
     display: none;
-}
-
-.accordion p {
-    padding-top: 24px;
-    padding-bottom: 8px;
-    line-height: 24px;
 }
