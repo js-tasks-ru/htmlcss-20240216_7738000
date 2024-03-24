@@ -1,1 +1,35 @@
 /* Стилизация кнопки */
+.button {
+    margin: 0;
+    width: 182px;
+    height: 48px;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px gray;
+    transition: 0.2s;
+
+}
+
+.button:active {
+    box-shadow: 0px 0px 3px gray;
+    transition: 0.2s;
+}
+
+.button__primary {
+    background-color: rgba(66, 99, 235, 1);
+    color: white;
+}
+
+.button__primary:hover {
+    background-color: rgba(35, 66, 192, 1);
+    color: white;
+}
+
+.button:disabled {
+    opacity: 50%;
+    cursor: not-allowed;
+    box-shadow: none;
+}
