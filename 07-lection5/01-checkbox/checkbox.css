@@ -3,7 +3,6 @@
     display: flex;
     align-items: center;
     column-gap: 12px;
-
 }
 
 .checkbox__input {
@@ -55,3 +54,5 @@
 .checkbox__input:disabled~.checkbox__state {
     background-color: var(--grey-2);
 }
+
+/* Finish */
