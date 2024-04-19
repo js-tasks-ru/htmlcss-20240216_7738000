@@ -1,0 +1,35 @@
+.page {
+    height: 100%;
+    background-color: aqua;
+    /* padding-left: 165px;
+    padding-right: 165px; */
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    /* grid-template-columns: 229px; */
+    /* column-gap: 56px; */
+    /* justify-content: stretch; */
+}
+
+.page__header {
+    height: 118px;
+    place-content: center;
+    grid-area: 1/1/2/3;
+    background-color: antiquewhite;
+}
+
+.page__menu {
+    grid-area: 2/1/2/2;
+    background-color: red;
+}
+
+.page__component {
+
+    grid-area: 2/1/2/3;
+    background-color: green;
+}
+
+.page__footer {
+    height: 130px;
+    grid-area: 3/1/3/3;
+    background-color: blueviolet;
+}
