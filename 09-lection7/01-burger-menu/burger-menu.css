@@ -1,0 +1,75 @@
+.burger_menu__open {
+    margin: 16px 12px;
+    height: 32px;
+    width: 32px;
+    border: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 12H21' stroke='%23495057' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M3 6H21' stroke='%23495057' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M3 18H21' stroke='%23495057' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.burger_menu__close {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 16px;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 6L6 18' stroke='%23212429' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6 6L18 18' stroke='%23212429' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+}
+
+.burger_menu__header {
+    height: 64px;
+    border-bottom: 1px solid var(--grey-2);
+}
+
+.burger_menu__logo {
+    text-align: center;
+}
+
+.burger-menu {
+    box-sizing: border-box;
+    padding: 16px 12px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: #F9FAFC;
+    transform: translateX(-100vw);
+    transition: transform 0.25s linear;
+}
+
+.burger-menu[data-open] {
+    transform: translateX(0);
+}
+
+.burger_menu__content h4 {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: var(--grey-3);
+}
+
+.burger_menu__content ul {
+    padding: 0;
+    margin: 0;
+}
+
+.burger_menu__content li {
+    list-style-type: none;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.burger_menu__content_active {
+    color: var(--red);
+}
