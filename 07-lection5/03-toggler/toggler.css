@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.toggler {
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+
+}
+
+.toggler__input {
+    position: absolute;
+    left: -100vw;
+    opacity: 0;
+}
+
+.toggler__state {
+    display: flex;
+    align-items: center;
+    width: 52px;
+    height: 28px;
+    border: 1px solid var(--grey-2);
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+.toggler__state::after {
+    content: "";
+
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    background-color: var(--grey-2);
+    transition: 0.2s;
+    transform: translateX(2px);
+
+}
+
+.toggler__label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    line-height: 24px;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    color: var(--grey-4);
+}
+
+/* CHECKED */
+
+.toggler__input:checked~.toggler__state {
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+}
+
+.toggler__input:checked~.toggler__state::after {
+    transition: 0.2s;
+    transform: translateX(26px);
+    background-color: var(--white);
+}
+
+/* FOCUS */
+
+.toggler__input:focus~.toggler__label {
+    text-decoration: underline;
+}
+
+/* HOVER */
+
+.toggler__input:hover~.toggler__state {
+    box-shadow: 0px 0px 16px var(--blue);
+}
+
+/* DISABLED */
+
+.toggler__input:disabled~.toggler__label {
+    color: var(--grey-2);
+}
+
+.toggler__input:disabled~.toggler__state {
+    background-color: var(--grey-2);
+    box-shadow: none;
+}
+
+.toggler__input:disabled~.toggler__state::after {
+    background-color: var(--grey-3);
+}
